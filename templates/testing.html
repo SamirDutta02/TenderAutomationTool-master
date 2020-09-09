@@ -1,0 +1,28 @@
+{% extends "layout.html" %} {% block content %}
+<div>
+  <h1 class="display-4">Testing- {{selected_employee_resumes}}</h1>
+  <p>{{selected_employees}}</p>
+  {% for e,pos in selected_employees.items() %}
+  <p class="lead">{{ e.resume }}</p>
+  <p class="lead">{{ pos }}</p>
+  {% endfor %} {{employement_status}}
+  <br />
+  {{selection_status}}
+  <br />
+  {{employee_position}}
+  <br />
+  {{position_number}}
+
+  <!--  {% for e in employement_status %}
+  <p class="lead">{{ e }}</p>
+  {% endfor %} {% for e in selection_status %}
+  <p class="lead">{{ e }}</p>
+  {% endfor %} {% for e in employee_position %}
+  <p class="lead">{{ e }}</p>
+  {% endfor %} {% for e in position_number %}
+  <p class="lead">{{ e }}</p>
+  {% endfor %} -->
+  <hr class="my-4" />
+</div>
+
+{% endblock content %}

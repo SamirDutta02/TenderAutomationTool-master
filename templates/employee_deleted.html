@@ -1,0 +1,5 @@
+{% extends "layout.html" %} {% block content %}
+<h1>The following employees are deleted from the database:-</h1>
+{% for d in deleted_employee %}
+<h2>{{ d }}</h2>
+{% endfor %} {% endblock content %}

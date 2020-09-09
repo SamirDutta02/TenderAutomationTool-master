@@ -1,0 +1,52 @@
+{% extends "layout.html" %} {% block content %}
+<div>
+  <h1 class="display-4">Team - Web Portals</h1>
+  <p class="lead">Here we will select the web portals team</p>
+  <hr class="my-4" />
+  <form action="{{url_for('testing')}}">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Employee Name</th>
+          <th scope="col">Employee Title</th>
+          <th scope="col">Selection Status</th>
+          <th scope="col">Postion</th>
+          <th scope="col">Postion/Order No</th>
+          <th scope="col">Employment Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for e in emp %}
+        <tr>
+          <th scope="row">{{ e }}</th>
+          <td>{{ e.title }}</td>
+          <td>
+            <select name="IT-selection_status">
+              <option value="yes">Selected</option>
+              <option value="no">Not selected</option>
+            </select>
+          </td>
+          <td>
+            <input type="text" name="IT-employee_position" />
+          </td>
+          <td>
+            <input type="text" name="IT-position_number" />
+          </td>
+          <td>
+            <select name="IT-employement_status">
+              <option value="Full">Full Time Employee</option>
+              <option value="Part">Part Time Employee</option>
+            </select>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <br />
+    <br />
+    <input type="submit" value="submit form" />
+  </form>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="jumbotron">
+  <h1 class="display-4">Sector Selection</h1>
+  <p class="lead">Please select the sector for selecting a team accordingly</p>
+  <hr class="my-4" />
+  <form method="POST">
+    {{ form.hidden_tag() }} {{ form.sector.label}}
+    <br />
+    {{ form.sector(class="form-control") }}
+    <br />
+    <br />
+    {{ form.submit(class="btn btn-primary") }}
+  </form>
+</div>
+
+{% endblock content %}

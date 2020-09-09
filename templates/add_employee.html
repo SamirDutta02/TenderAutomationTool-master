@@ -1,0 +1,32 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="jumbotron">
+  <h1 class="display-4">Add a new employee in the Database</h1>
+  <p class="lead">
+    Please fill the details of the employee and upload the document of the
+    employee as well.
+  </p>
+  <hr class="my-4" />
+  <form method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }} {{ form.emp_name.label}} {{ form.emp_name() }}
+    <br />
+    {{ form.emp_title.label}} {{ form.emp_title() }}
+    <br />
+    {{ form.emp_sector.label}} {{ form.emp_sector(class="form-control") }}
+    <br />
+    {{ form.emp_resume.label}} {{ form.emp_resume(class="form-control-file") }}
+    {% if form.emp_resume.errors %} {% for error in form.emp_resume.errors %}
+    <span class="text-danger"> {{ error }} </span><br />
+    {% endfor %} {% endif %}
+
+    <br />
+
+    {{ form.emp_signature.label}} {{
+    form.emp_signature(class="form-control-file") }}
+    <br />
+    <br />
+    {{ form.submit(class="btn btn-primary") }}
+  </form>
+</div>
+
+{% endblock content %}

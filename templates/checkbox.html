@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+{% block content %}
+<body>
+  <form method="POST" action="/checkbox">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="checkbox" value="static/TENDER_DOCS/Cover_index_profile.docx" name="mycheckbox" aria-label="Checkbox for following text input">
+          </div>
+        </div>
+        <h3>  Profile   <span class="label label-primary">  </span></h3>
+        <select name="fname">
+          <option value="">nil</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="checkbox" value="static/TENDER_DOCS/Business_Licenses.docx" name="mycheckbox" aria-label="Checkbox for following text input">
+          </div>`
+        </div>
+      <h3>  Business Licenses   <span class="label label-primary">  </span></h3>
+      <select name="fname">
+        <option value="">nil</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="checkbox" value="static/TENDER_DOCS/references.docx" name="mycheckbox" aria-label="Checkbox for following text input">
+          </div>
+        </div>
+        <h3>  References   <span class="label label-primary">  </span></h3>
+        <select name="fname">
+          <option value="">nil</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      
+      
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="checkbox" value="static/TENDER_DOCS/Certificates_and_Accreditation.docx" name="mycheckbox" aria-label="Checkbox for following text input">
+          </div>
+        </div>
+        <h3>  Certificates   <span class="label label-primary">  </span></h3>
+        <select name="fname">
+          <option value="">nil</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      
+      
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="checkbox" value="static/TENDER_DOCS/Latest_Audited_Financial_Statement.docx" name="mycheckbox" aria-label="Checkbox for following text input">
+          </div>
+        </div>
+        <h3>  Financial Statement   <span class="label label-primary">  </span></h3>
+        <select name="fname">
+          <option value="">nil</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <input type="submit">
+  </form>
+</body>
+{% endblock content %}

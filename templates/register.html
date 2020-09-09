@@ -1,0 +1,43 @@
+{% extends "layout.html" %} {% block content %}
+<body>
+  <form method="POST" action="/register">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Topic</span>
+        </div>
+        <input type="text" name="replace"class="form-control">
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Dated</span>
+        </div>
+        <input type="text" name="replace" class="form-control">
+      </div>
+      <div></div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">RFP</span>
+        </div>
+        <input type="text"  name="replace" class="form-control">
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Location</span>
+        </div>
+        <input type="text" name="replace" class="form-control">
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Email Id</span>
+        </div>
+        <input type="text" name="replace" class="form-control">
+      </div>
+
+      <input type="submit">
+  </form>
+</body>
+{% endblock content %}

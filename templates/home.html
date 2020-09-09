@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1> Select Agency </h1>
+<div class="btn-group">
+  <button type="button" class="form-control btn btn-default dropdown-toggle" data-toggle="dropdown">
+      Agency List <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+      <li><a href="{{ url_for('register') }}">UNDP</a></li>
+      <li><a href="#">Test</a></li>
+      <li><a href="#">Test1</a></li>
+  </ul>
+</div>
+{% endblock content %}

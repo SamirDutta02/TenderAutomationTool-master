@@ -1,0 +1,35 @@
+{% extends "layout.html" %} {% block content %}
+<div>
+  <h1 class="display-4">Delete</h1>
+  <p class="lead">Please select the employee to be deleted</p>
+  <hr class="my-4" />
+  <form action="{{url_for('deletion_completed')}}">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Employee Name</th>
+          <th scope="col">To be Deleted</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for e in emp %}
+        <tr>
+          <th scope="row">{{ e }}</th>
+          <td>
+            <select name="deletion_status">
+              <option value="no">Do not delete</option>
+              <option value="yes">Delete</option>
+            </select>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <br />
+    <br />
+    <input type="submit" value="submit form" />
+  </form>
+</div>
+
+{% endblock content %}

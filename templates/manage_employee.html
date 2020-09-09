@@ -1,0 +1,16 @@
+{% extends "layout.html" %} {% block content %}
+<h1>Manage employees</h1>
+<h2>You can add/remove employees from the database form this page.</h2>
+<div class="container">
+  <a href="{{url_for('addEmployee')}}"
+    ><button type="button" class="btn btn-primary btn-sm">
+      Add Employee
+    </button></a
+  >
+  <a href="{{url_for('delete_sector_selection')}}"
+    ><button type="button" class="btn btn-secondary btn-sm">
+      Remove Employee
+    </button></a
+  >
+</div>
+{% endblock content %}
