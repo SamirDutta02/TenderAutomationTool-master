@@ -4,6 +4,7 @@ from forms import FillData, LoginForm, SectorSelection, Team, Employee, DeleteEm
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from combine_docx import combine_resumes_and_other_stuff,combine_all_docx
+from replace import replace_text
 
 app = Flask(__name__)
 
@@ -703,7 +704,7 @@ def register():
     print(var_dic)
     
 
-
+    replace_text(context=var_dic)
 
     return render_template('register.html')
 
