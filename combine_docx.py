@@ -32,3 +32,5 @@ def combine_resumes_and_other_stuff(resume_list):
         composer.append(doc_temp)
     composer.append(Document_compose(last))
     composer.save(resume_master)
+
+
